@@ -435,7 +435,7 @@ WeekBe...</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\TESTSU~1\AppData\Local\Temp\Engine_15712_7664f72c225f4d6cae7993ebb8cc3ee4_\Engine_7032_d94c57a056a74d92826a7a1a7062f1a7_.yxdb</TempFile>
+          <TempFile>C:\Users\TESTSU~1\AppData\Local\Temp\Engine_27272_a3249670e0984e75b8429f6b4fb6a846_\Engine_7032_43d33b45cd9042e0816a72b0783302a2_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -569,6 +569,32 @@ WeekBe...</DefaultAnnotationText>
       </Properties>
       <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
     </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="750" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">C:\Users\testsubject941\Documents\alteryx\_Udacity\Project 5_AB_Testing\InvoiceData.yxdb</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+            <WriteCompatibleVersion>False</WriteCompatibleVersion>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>InvoiceData.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
   </Nodes>
   <Connections>
     <Connection>
@@ -606,6 +632,10 @@ WeekBe...</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="9" Connection="Output" />
       <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="13" Connection="Output" />
